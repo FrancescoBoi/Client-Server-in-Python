@@ -25,7 +25,7 @@ Each subfolder contains the python code for the client and the server. The three
   Then launch all the clients you want by opening wach time a new terminal, navigating to this folder and launching the command
   'python tombolaClient.py'
   
-TOMBOLA THREAD
+- TOMBOLA THREAD
   This is a Tombola game in python with threads using the client-server architecture. Each client has a board of 15 numbers. The server draws a number in the range of [1, 90] every x seconds and send this number to all the clients connected.
   If another client connects when the game has already begun, the server will send all the numbers drawn hitherto and the client checks if all his 15 numbers have been drawn. 
   The first client that has all the 15 numbers drawn wins the game and send a message to the server to communicate the event. The server informs all the clients that the game
