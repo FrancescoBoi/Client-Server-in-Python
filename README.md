@@ -39,12 +39,14 @@ Each client has a board of 15 numbers. The server draws a number in the range of
 The first client that has all the 15 numbers drawn wins the game and send a message to the server to communicate the event. Then,the server informs all the clients that the game is over. The clients disconnect while the server stays on and waits for other clients to start a new game.
 
 ### Launch the client-server Tombola application
-To launch the program, type the command
+To launch the program, type the command:
+
 ```
 python tombolaServer.py
 ```
 
-Then launch all the clients you want by opening each time a new Terminal with
+Then launch all the clients you want by opening each time a new Terminal with:
+
 ```
 python tombolaClient.py
 ```
@@ -62,11 +64,14 @@ The server has the main thread which waits for clients to connect. Another threa
 Two ports are used: one for sending the numbers from the server to the client and to inform the clients someone made tombola and another port is used by the winner to communicate to the server that he made tombola.
 
 ### Launch the multithread version of the client-server Tombola application
-Open a terminal window and launch the server with the command
+Open a terminal window and launch the server with the command:
 
-```python tombolaThreadServer.py```
+```
+python tombolaThreadServer.py
+```
 
 Then launch all the clients you want by opening each time a new terminal and typing the command:
+
 ```
 python tombolaThreadClient.py
 ```
